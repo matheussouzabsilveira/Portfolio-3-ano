@@ -1,0 +1,347 @@
+body{
+    background-color: #020116;
+    height: 100vh;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #020116;
+    height: 100vh;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.container{
+    height: 100%;
+
+}
+
+main{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    background-color: #020116;
+    z-index: 10;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    width: 30px;
+    display: none;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    position: relative;
+    height: 25px;
+}
+
+.nav a::after{
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.3s;
+}
+
+.nav a:hover::after{
+    width: 100%;
+}
+
+.logo h1{
+    color: white;
+}
+
+.atividades{
+    padding-top: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.atividade1{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.atividade1 .content{
+    width: 50%;
+    color: white;
+    padding: 20px;
+}
+
+.atividade1 .content h1{
+    margin-bottom: 20px;
+}
+
+.atividade1 .content span{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.atividade1 .content a{
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.atividade1 .image{
+    width: 50%;
+    height: auto;
+}
+
+.atividade1 .image img{
+    width: 100%;
+    height: auto;
+}
+.atividade2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.atividade2 .content{
+    width: 50%;
+    color: white;
+    padding: 20px;
+}
+
+.atividade2 .content h1{
+    margin-bottom: 20px;
+}
+
+.atividade2 .content span{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.atividade2 .content a{
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.atividade2 .image{
+    width: 50%;
+    height: auto;
+}
+
+.atividade2 .image img{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: #01000c;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+footer p{
+    font-weight: bold;
+}
+
+aside{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: #01000c;
+    padding-top: 80px;
+    width: 300px;
+    height: 100%;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-aside a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-aside a:hover{
+    background-color: white;
+    color: #01000c;
+}
+
+
+    @media screen and (max-width: 370px){
+        aside{
+            position: fixed;
+            top: 0;
+            left: -200px;
+            background-color: #01000c;
+            padding-top: 80px;
+            width: 200px;
+            height: 100%;
+            z-index: 10;
+            transition: 0.3s ease-in-out;
+        }
+}
+
+@media screen and (max-width: 720px){
+    #menu{
+        display: inline;
+    }
+    .nav #link{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px){
+    #menu{
+        display: inline;
+    }
+    .nav #link{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .atividade1{
+        margin-top: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+    }
+
+    .atividade1 .content{
+        width: 100%;
+        color: white;
+        padding: 20px;
+    }
+
+    .atividade1 .image{
+        width: 100%;
+    }
+
+    .atividade2{
+        margin-top: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+    }
+
+    .atividade2 .content{
+        width: 100%;
+        color: white;
+        padding: 20px;
+    }
+
+    .atividade2 .image{
+        width: 100%;
+    }
+
+    .atividade3{
+        margin-top: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+    }
+
+    .atividade3 .content{
+        width: 100%;
+        color: white;
+        padding: 20px;
+    }
+
+    .atividade3 .image{
+        width: 100%;
+    }
+
+    .atividade4{
+        margin-top: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+    }
+
+    .atividade4 .content{
+        width: 100%;
+        color: white;
+        padding: 20px;
+    }
+
+    .atividade4 .image{
+        width: 100%;
+    }
+
+    .atividade5{
+        margin-top: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+    }
+
+    .atividade5 .content{
+        width: 100%;
+        color: white;
+        padding: 20px;
+    }
+
+    .atividade5 .image{
+        width: 100%;
+    }
+}
