@@ -81,12 +81,17 @@ header{
 }
 
 .atividades{
-    padding-top: 80px;
+    padding-top: 100px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     padding-left: 7vw;
     padding-right: 7vw;
+}
+
+#h1{
+    text-align: center;
+    color: white;
 }
 
 .atividade1{

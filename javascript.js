@@ -5,6 +5,8 @@ function menu(){
 
     let currentLeft = window.getComputedStyle(aside).left;
 
+    alert(currentLeft)
+
     if (currentLeft === "-300px") {
         aside.style.left = "0px";
     } else if (currentLeft === "0px") {
