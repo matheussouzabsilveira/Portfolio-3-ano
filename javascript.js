@@ -5,8 +5,6 @@ function menu(){
 
     let currentLeft = window.getComputedStyle(aside).left;
 
-    alert(currentLeft)
-
     if (currentLeft === "-300px") {
         aside.style.left = "0px";
     } else if (currentLeft === "0px") {
@@ -14,6 +12,12 @@ function menu(){
     }
 
 }
+
+function menubtn(){
+    let aside = document.querySelector("#aside")
+    aside.style.left = "0px";
+}
+
 
 function asideOff(){
     let larguraTela = window.innerWidth
