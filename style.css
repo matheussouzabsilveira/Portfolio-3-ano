@@ -98,6 +98,13 @@ header{
     border-radius: 50%;
     background-color: white;
     margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.content .foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .perfil p{
@@ -268,6 +275,13 @@ header{
 .curriculo-content{
     color: white;
     max-width: 450px;
+}
+
+.curriculo-content a{
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 footer{
