@@ -312,6 +312,10 @@ aside{
     transition: 0.3s ease-in-out;
 }
 
+.aside-animation{
+    left: 0px!important;
+}
+
 .nav-aside a{
     display: block;
     text-align: center;
@@ -357,26 +361,12 @@ aside{
     }
 }
 
-    @media screen and (max-width: 370px){
-        aside{
-            position: fixed;
-            top: 0;
-            left: -300px;
-            background-color: #01000c;
-            padding-top: 80px;
-            width: 200px;
-            height: 100%;
-            z-index: 10;
-            transition: 0.3s ease-in-out;
-        }
-
     .curriculo-border img{
         position: relative;
         width: auto;
         height:100%;
         z-index: 1;
     }
-}
 
 @media screen and (max-width: 720px){
     #menu{

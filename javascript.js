@@ -1,29 +1,14 @@
 
 
 function menu(){
-    let aside = document.querySelector("#aside")
-
-    let currentLeft = window.getComputedStyle(aside).left;
-
-    if (currentLeft === "-300px") {
-        aside.style.left = "0px";
-    } else if (currentLeft === "0px") {
-        aside.style.left = "-300px";
-    }
-
+    let aside = document.querySelector("#aside").classList.toggle("aside-animation")
 }
-
-function menubtn(){
-    let aside = document.querySelector("#aside")
-    aside.style.left = "0px";
-}
-
 
 function asideOff(){
     let larguraTela = window.innerWidth
     let aside = document.querySelector("#aside")
     if(larguraTela > 720){
-        aside.style.left = "-300px"
+        aside.classList.remove("aside-animation")
     }
 }
 

@@ -1,0 +1,72 @@
+aside{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: #01000c;
+    padding-top: 80px;
+    width: 300px;
+    height: 100%;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+}
+
+.aside-animation{
+    left: 0px!important;
+}
+
+.nav-aside a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-aside a:hover{
+    background-color: white;
+    color: #01000c;
+}
+
+@media screen and (max-width: 370px){
+    aside{
+        position: fixed;
+        top: 0;
+        left: -300px;
+        background-color: #01000c;
+        padding-top: 80px;
+        width: 250px;
+        height: 100%;
+        z-index: 10;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 320px){
+    aside{
+        position: fixed;
+        top: 0;
+        left: -300px;
+        background-color: #01000c;
+        padding-top: 80px;
+        width: 200px;
+        height: 100%;
+        z-index: 10;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 260px){
+    aside{
+        position: fixed;
+        top: 0;
+        left: -300px;
+        background-color: #01000c;
+        padding-top: 80px;
+        width: 150px;
+        height: 100%;
+        z-index: 10;
+        transition: 0.3s ease-in-out;
+    }
+}
